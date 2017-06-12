@@ -1,0 +1,6 @@
+applications: 
+- name : cours-vhdl 
+  host : koudjil19 
+  memory : 128M 
+  path : /home/ghost/Bureau/deploiment 
+  buildpack : https://github.com/cloudfoundry/staticfile-buildpack.git 

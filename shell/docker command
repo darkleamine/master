@@ -1,0 +1,32 @@
+///////////////////   docker ////////////////////
+ 
+     docker ps : This lists the running containers
+	 docker ps -a : This lists all the containers, both running and exited
+	 docker images : This lists local (downloaded and locally created) images
+	 docker run : This will launch a new instance container from an image
+	 docker stop : This is used to stop a container
+
+
+
+	 docker logs <container-ID|name> : Everything that is written to
+the STDOUT containers will end up in the file that can be accessed via
+this command. This is a very handy way to output information from
+within a container, as shown here:
+
+
+
+///to export container use docker export <container-ID|name>  that the file output has .tar extension 
+
+////////////dans le livre de oskar_hane_build_your_own_paas_with_docker /////////////////////////
+we use a image wordpress 
+
+docker run -e ////donner les variable de enviroement et fait le dooner des valuer  --name le nm_de_conteneur --link fait linke avec d'autre conteneur dans le cas de wordpress il faut un conteneur mysql pour bien demarrer le conteneur mysql
+-d pour le mode  -p pour preciser le host port par defaut 80 
+
+
+docker run --name wordpress-name -e variable_de_environe  --link mysql-cont:mysql -d  nom_de_image 
+
+
+docker rm $(docker ps -a -q -f status=exited)  this command delete all the container with his status exited
+
+docker pull nameofimage to dawnload image 

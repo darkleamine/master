@@ -1,0 +1,18 @@
+nodejs ** python *** html/css ca marche bien avec ibmbluemix
+
+le probleme c'est le configuration de l'application mais pas le deployement de l'application,
+quand l'app bien configure nous avons pas besoin de fichier de configuration
+
+https://developers.openshift.com/getting-started/index.html
+https://developers.openshift.com/languages/nodejs/getting-started.html
+https://flynn.io/docs/installation
+
+
+
+https://developers.redhat.com/auth/realms/rhd/protocol/openid-connect/auth?client_id=oso&redirect_uri=https%3A%2F%2Fmanage.openshift.com%2Faccounts%2Fauth%2Fkeycloak%2Fcallback&response_type=code&scope=openid+profile+email&state=76240c2fbc67eb1f68ff2e2c511ced78
+https://console.starter-us-east-1.openshift.com/console/
+
+https://openshift.redhat.com/app/login?then=%2Fapp%2Fconsole
+
+
+heroku deploy app with docker container marche avec js app de heroku
